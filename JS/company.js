@@ -1,6 +1,6 @@
 export const companyItem = [
   {
-    image: "https://www.tawuniya.com/static/media/Tawuniya-Logo.c909efac.svg",
+    image: "https://www.tawuniya.com/static/media/Tawuniya-Logo.b70789ab.svg",
     link: "https://www.tawuniya.com",
   },
   {
@@ -46,20 +46,20 @@ export const companyItem = [
       "https://www.allianzsf.com/content/dam/onemarketing/mena/saudi-arabia/logos/AzSF_Logo_PNG.png",
     link: "https://www.allianzsf.com",
   },
-//   {
-//     image: "",
-//     link: "",
-//   },
-//   {
-//     image: "",
-//     link: "",
-//   },
-//   {
-//     image: "",
-//     link: "",
-//   },
-//   {
-//     image: "",
-//     link: "",
-//   },
+  //   {
+  //     image: "",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "",
+  //     link: "",
+  //   },
+  //   {
+  //     image: "",
+  //     link: "",
+  //   },
 ];

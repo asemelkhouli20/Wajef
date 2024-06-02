@@ -20,7 +20,7 @@ function setFeatures() {
     var item = featuresItem[i];
     htmlCodeFeature += `
       <div class="fe-box">
-        <img src="img/features/${item.image}" alt="${item.title} img" />
+        <img src="Img/features/${item.image}" alt="${item.title} img" />
         <h6>${item.title}</h6>
       </div>
       `;

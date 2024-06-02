@@ -12,7 +12,7 @@ export function getHead(active) {
   }
 
   return `
-<a href="index.html"><img src="./img/logo.png" class="logo" alt="logo" /></a>
+<a href="index.html"><img src="./Img/logo.png" class="logo" alt="logo" /></a>
       <div>
         <ul id="navbar">
           <li><a class="${activeWho.activeHome}" href="index.html">Home</a></li>

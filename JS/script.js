@@ -1,7 +1,6 @@
 import { getHead } from "./header.js";
 import { featuresItem } from "./features.js";
 import { footerContent } from "./footer.js";
-import { companyItem } from "./company.js";
 import { serviceContent } from "./service.js";
 import { form_detalis } from "./formDetails.js";
 
@@ -54,18 +53,6 @@ function setHead(active) {
   const header = document.getElementById("header");
   header.innerHTML = getHead(active);
 }
-function setCompany() {
-  const feature = document.getElementById("company");
-  var htmlCode = "";
-  for (let i = 0; i < companyItem.length; i++) {
-    var item = companyItem[i];
-    htmlCode += `<img src="${item.image}"/>`;
-  }
-  feature.innerHTML = htmlCode;
-}
-
-setCompany();
-
 setFormDetalis();
 setHead("activeHome");
 setFooter();

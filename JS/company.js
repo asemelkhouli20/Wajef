@@ -1,4 +1,4 @@
-export const companyItem = [
+const companyItem = [
   {
     image: "https://www.tawuniya.com/static/media/Tawuniya-Logo.b70789ab.svg",
     link: "https://www.tawuniya.com",
@@ -63,3 +63,18 @@ export const companyItem = [
   //     link: "",
   //   },
 ];
+
+
+
+
+function setCompany() {
+  const feature = document.getElementById("company");
+  var htmlCode = "";
+  for (let i = 0; i < companyItem.length; i++) {
+    var item = companyItem[i];
+    htmlCode += `<img src="${item.image}"/>`;
+  }
+  feature.innerHTML = htmlCode;
+}
+
+setCompany();

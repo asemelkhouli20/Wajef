@@ -23,5 +23,20 @@ function setHead(active) {
   const header = document.getElementById("header");
   header.innerHTML = getHead(active);
 }
-setHead("activeHome");
 setFeatures();
+
+export function setHome(){
+setHead("activeHome");
+}
+
+export function setAbout() {
+  setHead("activeAbout");
+}
+
+export function setProduct() {
+  setHead("activeProduct");
+}
+
+export function setService() {
+  setHead("activeService");
+}

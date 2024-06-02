@@ -157,7 +157,7 @@ header {
   color: #ffffff;
 }
 span {
-  background-color: #6494b7;
+  background-color: rgba(100, 148, 183, 0.5);
   padding: 10px;
   border-radius: 8px;
 }

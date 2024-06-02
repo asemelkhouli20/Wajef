@@ -1,6 +1,6 @@
 export const footerContent = `
   <div class="col">
-        <img src="img/logo.png" class="logo" />
+        <img src="Img/logo.png" class="logo" />
         <h4>للتواصل</h4>
         <p>
           <strong>العنوان:</strong> 

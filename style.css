@@ -236,3 +236,14 @@ span {
   width: 150px;
   height: 100%;
 }
+
+.logo-contet {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: #6494b7;
+}
+.logo-contet .logo {
+  margin-left: 10px;
+}

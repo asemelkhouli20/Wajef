@@ -12,14 +12,17 @@ export function getHead(active) {
   }
 
   return `
-<a href="index.html"><img src="./Img/logo.png" class="logo" alt="logo" /></a>
+<a href="index.html" class="logo-contet">
+<img src="./Img/logo.png" class="logo" alt="logo" />
+<h3 >شركة وجيف لخدمات وساطة التأمين</h3>
+</a>
       <div>
         <ul id="navbar">
-          <li><a class="${activeWho.activeHome}" href="index.html">Home</a></li>
-          <li><a class="${activeWho.activeShop}" href="shop.html">Shop</a></li>
-          <li><a class="${activeWho.activeBlog}" href="blog.html">Blog</a></li>
-          <li><a class="${activeWho.activeAbout}" href="about.html">About</a></li>
-          <li><a class="${activeWho.activeContact}" href="contact.html">Contact Us</a></li>
+          <li><a class="${activeWho.activeHome}" href="index.html">الرئيسة</a></li>
+          <li><a class="${activeWho.activeAbout}" href="about.html">من نحن</a></li>
+          <li><a class="${activeWho.activeShop}" href="product.html">منتجات التأمين</a></li>
+          <li><a class="${activeWho.activeBlog}" href="service.html">الخدمات</a></li>
+          <li><a class="${activeWho.activeContact}" href="#">English</a></li>
 
           <i id="close" class="far fa-times"></i>
         </ul>

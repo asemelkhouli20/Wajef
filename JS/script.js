@@ -3,7 +3,12 @@ import { featuresItem } from "./features.js";
 import { footerContent } from "./footer.js";
 import { companyItem } from "./company.js";
 import { serviceContent } from "./service.js";
+import { form_detalis } from "./formDetails.js";
 
+function setFormDetalis() {
+  const form_details = document.getElementById("form-details");
+  form_details.innerHTML = form_detalis;
+}
 function setFooter() {
   const footer = document.getElementById("footer");
   footer.innerHTML = footerContent;
@@ -61,6 +66,7 @@ function setCompany() {
 
 setCompany();
 
+setFormDetalis();
 setHead("activeHome");
 setFooter();
 setFeatures();

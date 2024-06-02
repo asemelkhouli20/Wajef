@@ -50,9 +50,9 @@
   background-color: #6494b7;
   position: absolute;
   bottom: -4px;
-  left: 20px;
+  right: 20px;
 }
-@media (max-width: 799px) {
+@media (max-width: 905px) {
   #navbar {
     flex-direction: column;
     align-items: flex-start;

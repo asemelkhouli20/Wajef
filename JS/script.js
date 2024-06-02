@@ -54,7 +54,7 @@ function setCompany() {
   var htmlCode = "";
   for (let i = 0; i < companyItem.length; i++) {
     var item = companyItem[i];
-    htmlCode += `<img src="${item.image}" alt="${item.image}"/>`;
+    htmlCode += `<img src="${item.image}"/>`;
   }
   feature.innerHTML = htmlCode;
 }

@@ -1,4 +1,4 @@
-export const footerContent = `
+const footerContent = `
   <div class="col">
         <img src="Img/logo.png" class="logo" />
         <h4>للتواصل</h4>
@@ -23,3 +23,9 @@ export const footerContent = `
 
       
 `;
+
+function setFooter() {
+  const footer = document.getElementById("footer");
+  footer.innerHTML = footerContent;
+}
+setFooter();

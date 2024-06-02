@@ -1,6 +1,5 @@
 import { getHead } from "./header.js";
 import { featuresItem } from "./features.js";
-import { footerContent } from "./footer.js";
 import { serviceContent } from "./service.js";
 import { form_detalis } from "./formDetails.js";
 
@@ -8,11 +7,6 @@ function setFormDetalis() {
   const form_details = document.getElementById("form-details");
   form_details.innerHTML = form_detalis;
 }
-function setFooter() {
-  const footer = document.getElementById("footer");
-  footer.innerHTML = footerContent;
-}
-
 function setFeatures() {
   const feature = document.getElementById("feature");
   const insurance = document.getElementById("insurance-type");
@@ -55,7 +49,6 @@ function setHead(active) {
 }
 setFormDetalis();
 setHead("activeHome");
-setFooter();
 setFeatures();
 setService();
 

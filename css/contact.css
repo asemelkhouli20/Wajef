@@ -93,6 +93,7 @@
 #insurance-type-value p{
   color: #6b6b6b;
   width: 70%;
+  line-height: 25px;
 }
 #insurance-type-value h4{
   margin: 10px;

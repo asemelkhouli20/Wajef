@@ -1,7 +1,15 @@
 import { featuresItem } from "./features.js";
-document
-  .getElementById("insurance-type")
-  .addEventListener("change", myFunction);
+import { setFormDetalis, setInsurance, setService } from "./formDetails.js";
+
+setFormDetalis();
+setInsurance();
+setService();
+setChange();
+function setChange() {
+  document
+    .getElementById("insurance-type")
+    .addEventListener("change", myFunction);
+}
 
 function myFunction(e) {
   var value = document.getElementById("insurance-type-value");
@@ -19,7 +27,4 @@ function myFunction(e) {
         <h4>${item.title}</h4>
         <p>${item.des}</p>
   `;
- 
-  
-  
 }

@@ -1,64 +1,28 @@
-export const form_detalis = `
- <form action="">
-        <span>قدم طلبك الان</span>
-        <h2>سيتم الرد في اقل من ٢٤ ساعة</h2>
-        <input
-          class="margin-bottom"
-          type="text"
-          name="company"
-          placeholder="الشركة / المؤسسة"
-        />
+import { serviceContent, form_detalis } from "./service.js";
+import { featuresItem } from "./features.js";
 
-        <input
-          class="margin-bottom"
-          type="number"
-          name="phone"
-          placeholder="رقم الهاتف"
-        />
-        <input
-          class="margin-bottom"
-          type="email"
-          name="email"
-          placeholder="البريد الالكتروني"
-        />
-        <select
-          id="insurance-type"
-          name="insuranceType"
-          class="margin-bottom"
-        ></select>
-        <div class="myFile margin-bottom">
-          <h5>خطاب التفويض</h5>
-          <input
-            type="file"
-            id="AuthorizationLetter"
-            name="AuthorizationLetter"
-          />
-        </div>
-        <div class="myFile margin-bottom">
-          <h5>سجل تجاري</h5>
-          <input
-            type="file"
-            id="CommercialRegistry"
-            name="CommercialRegistry"
-          />
-        </div>
-        <div class="myFile margin-bottom">
-          <h5>قائمة الاعضاء</h5>
-          <input type="file" id="MembersList" name="MembersList" />
-        </div>
-        <textarea
-          class="margin-bottom"
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <button class="normal">إرسال طلب</button>
-      </form>
-      <div id="insurance-type-value">
-        <img src="Img/logo.png" />
-        <h4>منصة وجيف</h4>
-        <p id="service_wajef"></p>
-      </div>
-`;
+export function setFormDetalis() {
+  const form_details = document.getElementById("form-details");
+  form_details.innerHTML = form_detalis;
+}
+
+export function setService() {
+  const service = document.getElementById("service_wajef");
+  var htmlCode = "";
+  for (let i = 0; i < serviceContent.length; i++) {
+    var item = serviceContent[i];
+    htmlCode += `<strong>${item.title}</strong>${item.des}<br/><br/>`;
+  }
+
+  service.innerHTML = htmlCode;
+}
+
+export function setInsurance() {
+  const insurance = document.getElementById("insurance-type");
+  var htmlCodeInsurance = `<option disabled selected value> -- اختر نوع التأمين -- </option>`;
+  for (let i = 0; i < featuresItem.length; i++) {
+    var item = featuresItem[i];
+    htmlCodeInsurance += `<option value="${item.title}">${item.title}</option>`;
+  }
+  insurance.innerHTML = htmlCodeInsurance;
+}

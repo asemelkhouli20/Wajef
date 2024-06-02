@@ -1,19 +1,11 @@
 import { getHead } from "./header.js";
 import { featuresItem } from "./features.js";
-import { serviceContent } from "./service.js";
-import { form_detalis } from "./formDetails.js";
 
-function setFormDetalis() {
-  const form_details = document.getElementById("form-details");
-  form_details.innerHTML = form_detalis;
-}
 function setFeatures() {
   const feature = document.getElementById("feature");
-  const insurance = document.getElementById("insurance-type");
 
   var htmlCodeFeature = "";
-  var htmlCodeInsurance =
-    "<option disabled selected value> -- اختر نوع التأمين -- </option>";
+ 
   for (let i = 0; i < featuresItem.length; i++) {
     var item = featuresItem[i];
     htmlCodeFeature += `
@@ -22,44 +14,14 @@ function setFeatures() {
         <h6>${item.title}</h6>
       </div>
       `;
-    htmlCodeInsurance += `
-<option value="${item.title}">${item.title}</option>
-      `;
+    
   }
   feature.innerHTML = htmlCodeFeature;
-  insurance.innerHTML = htmlCodeInsurance;
-}
-function setService() {
-  const service = document.getElementById("service_wajef");
-  var htmlCode = "";
-
-  for (let i = 0; i < serviceContent.length; i++) {
-    var item = serviceContent[i];
-    htmlCode += `
-     <strong>${item.title}</strong>${item.des}<br /><br />
-    `;
-  }
-
-  service.innerHTML = htmlCode;
 }
 
 function setHead(active) {
   const header = document.getElementById("header");
   header.innerHTML = getHead(active);
 }
-setFormDetalis();
 setHead("activeHome");
 setFeatures();
-setService();
-
-var Tawk_API = Tawk_API || {},
-  Tawk_LoadStart = new Date();
-(function () {
-  var s1 = document.createElement("script"),
-    s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = "https://embed.tawk.to/665c68259a809f19fb37eb12/1hvcfdlcc";
-  s1.charset = "UTF-8";
-  s1.setAttribute("crossorigin", "*");
-  s0.parentNode.insertBefore(s1, s0);
-})();

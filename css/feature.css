@@ -15,7 +15,9 @@
   border-radius: 4px;
   margin: 15px 0;
 }
-
+#feature .bigBox {
+  width: 50%;
+}
 #feature .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 211, 0.1);
 }
@@ -32,7 +34,6 @@
   height: 80px;
   object-fit: contain;
   margin-bottom: 10px;
-
 }
 #feature .fe-box:nth-child(1) h6 {
   background-color: #fddde4;
@@ -62,12 +63,12 @@
   #feature {
     justify-content: center;
   }
-  #feature .fe-box{
+  #feature .fe-box {
     margin: 15px;
   }
 }
 @media (max-width: 500px) {
-  #feature .fe-box{
+  #feature .fe-box {
     width: 145px;
     margin: 0 15px 15px 0;
   }

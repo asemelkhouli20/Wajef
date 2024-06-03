@@ -1,16 +1,21 @@
-const bar = document.getElementById("bar");
-const close = document.getElementById("close");
-const navbar = document.getElementById("navbar");
-
-if (bar) {
-  bar.addEventListener("click", openMenu);
-}
-if (close) {
-  close.addEventListener("click", closeMenu);
-}
 function openMenu() {
+  const navbar = document.getElementById("navbar");
   navbar.classList.add("active");
 }
 function closeMenu() {
+  const navbar = document.getElementById("navbar");
   navbar.classList.remove("active");
+}
+
+export function setMenu() {
+  // if (bar) {
+  const bar = document.getElementById("bar");
+
+  bar.addEventListener("click", openMenu);
+  // }
+  // if (close) {
+  const close = document.getElementById("close");
+
+  close.addEventListener("click", closeMenu);
+  // }
 }

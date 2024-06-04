@@ -10,7 +10,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+a {
+text-decoration: none;
+}
 /* Global Styles */
 
 h1 {
@@ -207,7 +209,7 @@ span {
 .time {
   background-color: transparent;
   font-size: 12px;
-  color: #fff;
+  color: #000;
 }
 
 #company {

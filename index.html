@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/contact.css" />
@@ -18,30 +17,40 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css" />
+    
   </head>
   <body>
     <section id="header"></section>
 
-    <header class="hero">
-      <div class="layout blur"></div>
-      <div class="hero-content">
-        <h1 class="hero-title">
-          ارتقِ بتجربتك في التأمين إلى <span>المستوى التالي</span>
-        </h1>
-
-        <div class="container">
-          <h2 class="text" id="text">Developer</h2>
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+          >
+            <h1 class="hero-title">
+              ارتقِ بتجربتك في التأمين إلى <br />
+              <h1 style="color: #6494b7">المستوى التالي</h1>
+            </h1>
+            <div class="container">
+              <h2 class="text" id="text">Developer</h2>
+            </div>
+            <h2>احصل على خصم حصري على عمولة التأمين لفترة محدوده</h2>
+            <div>
+              <a href="#form-details" class="btn-get-started scrollto">
+                أسرع.أسهل.امن.<strong>قدم طلبك الان</strong>
+              </a>
+            </div>
+            <span class="time">سيتم الرد عليك في خلال اقل من 24 ساعة</span>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="Img/hero.png" class="img-fluid" alt="" />
+          </div>
         </div>
-        <div class="dataForm">
-          <button>
-            <a href="#form-details">
-              أسرع.أسهل.امن.<strong>قدم طلبك الان</strong>
-            </a>
-          </button>
-        </div>
-        <span class="time">سيتم الرد عليك في خلال اقل من 24 ساعة</span>
       </div>
-    </header>
+    </section>
+    
     <section id="company"></section>
     <section id="feature" class="section-p1"></section>
 

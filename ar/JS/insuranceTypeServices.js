@@ -23,8 +23,8 @@ function setInsuranceTypeServices() {
       <p class="card-text">${item.des}</p>
       <div class="read-more">
         <a href="#">
-          <i class="bi bi-arrow-right"></i> اقرا المزيد
-        </a>
+           اقرا المزيد
+       <i class="bi bi-arrow-left"></i> </a>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@ setInsuranceTypeServices();
 
 function setInsurances() {
   const insurance = document.getElementById("insurance-type");
-  var htmlCodeInsurance = `<option disabled selected value> -- Select Insurance Type -- </option>`;
+  var htmlCodeInsurance = `<option disabled selected value> -- اختر نوع التامين -- </option>`;
   for (let i = 0; i < featuresItem.length; i++) {
     var item = featuresItem[i];
     htmlCodeInsurance += `<option value="${item.title}">${item.title}</option>`;

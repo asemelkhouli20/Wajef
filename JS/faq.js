@@ -56,8 +56,8 @@ function setFAQ() {
     data-bs-target="#faq-list-${index}"
   >
     ${item.Q}
-    <i class="bx bx-chevron-down icon-show"></i>
-    <i class="bx bx-chevron-up icon-close"></i>
+    <i class="bx bx-chevron-down icon-show icon-show-en"></i>
+    <i class="bx bx-chevron-up icon-close icon-close-en"></i>
   </a>
   <div id="faq-list-${index}" class="collapse" data-bs-parent=".faq-list">
     <p>${item.A}</p>

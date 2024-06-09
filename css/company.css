@@ -101,3 +101,39 @@
 .tawk-flex {
   background-color: white;
 }
+
+#discount-bunner {
+  height: 40px;
+  width: 100%;
+  height: 100%;
+}
+#discount-bunner {
+  background: linear-gradient(45deg, #6070b4, #5ea2c2);
+  font-size: 14px;
+  padding: 0;
+  height: 80px;
+}
+.show-logo {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url(../Img/logo.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#discount-bunner a {
+  padding-left: 5px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#discount-bunner a strong {
+  padding-left: 5px;
+  color: #5bd1d7;
+  font-size: 24px;
+  font-weight: 800;
+}

@@ -64,9 +64,6 @@ const companyItem = [
   //   },
 ];
 
-
-
-
 function setCompany() {
   const feature = document.getElementById("company");
   var htmlCode = "";
@@ -75,6 +72,9 @@ function setCompany() {
     htmlCode += `<img src="${item.image}"/>`;
   }
   feature.innerHTML = htmlCode;
+
+  var copy = document.querySelector(".logos-slide").cloneNode(true);
+  document.querySelector(".logos").appendChild(copy);
 }
 
 setCompany();

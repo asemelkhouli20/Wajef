@@ -1,0 +1,126 @@
+/*--------------------------------------------------------------
+# insurance Section
+--------------------------------------------------------------*/
+#insurance {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  /* margin-bottom: -120px; */
+}
+
+#insurance:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#insurance .container {
+  z-index: 2;
+}
+
+#insurance h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#insurance h2 {
+  color: #eee;
+  font-size: 24px;
+}
+
+#insurance .get-started-icon {
+  font-size: 24px;
+  background: #2071ab;
+  padding: 14px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#insurance .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -10px;
+  padding: 8px 26px 8px 26px;
+  color: #fff;
+  background: #484b58;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+}
+
+#insurance .btn-get-started:hover {
+  background: #2071ab;
+}
+
+.details-des {
+  padding: 10px;
+  color: white;
+  line-height: 35px;
+  font-size: 20px;
+  max-width: 80%;
+  margin: 20px;
+  
+  background-color: #2071ab5f;
+}
+
+@media (min-width: 1024px) {
+  #insurance {
+    background-attachment: fixed;
+  }
+
+}
+
+@media (max-width: 1024px), (max-height: 768px) {
+  #insurance {
+    height: 80vh;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  #insurance {
+    height: 80vh;
+  }
+
+  #insurance h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #insurance h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+.details-des {
+max-width: 100%;
+    font-size:15px;
+line-height: 25px;
+}
+}
+
+@media (max-height: 640px) {
+  #insurance {
+    height: 120vh;
+  }
+
+}

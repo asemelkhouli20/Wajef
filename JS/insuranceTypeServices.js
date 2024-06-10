@@ -22,7 +22,7 @@ function setInsuranceTypeServices() {
       </h5>
       <p class="card-text">${item.des}</p>
       <div class="read-more">
-        <a href="#">
+        <a href="details/?name=${item.title}">
           <i class="bi bi-arrow-right"></i> Read More
         </a>
       </div>

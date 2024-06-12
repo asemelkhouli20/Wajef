@@ -1,6 +1,5 @@
 import { featuresItem } from "./features.js";
 
-setChange();
 function setChange() {
   document
     .getElementById("insurance-type")
@@ -36,8 +35,11 @@ function updateFileInputLabel(inputElement) {
   });
 }
 
-document
-  .querySelectorAll(".custom-file-input")
-  .forEach(function (inputElement) {
-    updateFileInputLabel(inputElement);
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  setChange();
+  document
+    .querySelectorAll(".custom-file-input")
+    .forEach(function (inputElement) {
+      updateFileInputLabel(inputElement);
+    });
+});

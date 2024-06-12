@@ -33,9 +33,8 @@ function setInsuranceTypeServices() {
     `;
   }
   value.innerHTML = htmlConent;
-   initLazyLoadingFunc();
+  initLazyLoadingFunc();
 }
-setInsuranceTypeServices();
 
 function setInsurances() {
   const insurance = document.getElementById("insurance-type");
@@ -45,6 +44,9 @@ function setInsurances() {
     htmlCodeInsurance += `<option value="${item.title}">${item.title}</option>`;
   }
   insurance.innerHTML = htmlCodeInsurance;
- 
 }
-setInsurances();
+document.addEventListener("DOMContentLoaded", function () {
+  setInsuranceTypeServices();
+
+  setInsurances();
+});

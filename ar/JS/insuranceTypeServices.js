@@ -35,7 +35,6 @@ function setInsuranceTypeServices() {
   value.innerHTML = htmlConent;
   initLazyLoadingFunc();
 }
-setInsuranceTypeServices();
 
 function setInsurances() {
   const insurance = document.getElementById("insurance-type");
@@ -46,4 +45,7 @@ function setInsurances() {
   }
   insurance.innerHTML = htmlCodeInsurance;
 }
-setInsurances();
+document.addEventListener("DOMContentLoaded", function () {
+  setInsuranceTypeServices();
+  setInsurances();
+});

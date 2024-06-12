@@ -67,4 +67,6 @@ function setFAQ() {
   }
   value.innerHTML = htmlConent;
 }
-setFAQ();
+document.addEventListener("DOMContentLoaded", function () {
+  setFAQ();
+});

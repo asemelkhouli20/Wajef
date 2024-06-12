@@ -1,4 +1,14 @@
 function makeRequest(formData) {
+  const totalSize = calculateFormDataSize(formData); // Calculate total form data size
+  console.log(totalSize);
+  const maxSize = 1000000; // 1 MB
+  if (totalSize > maxSize) {
+    alert(
+      "Form data exceeds maximum allowed size. Please reduce the size of your input."
+    );
+    return; // Stop further execution if size exceeds limit
+  }
+
   document.querySelector(".sent-message").style.display = "none";
   document.querySelector(".error-message").style.display = "none";
   document.querySelector(".loading").style.display = "block";
@@ -8,8 +18,8 @@ function makeRequest(formData) {
     body: formData,
     redirect: "follow",
   };
-  console.log(requestOptions);
 
+  
   fetch("https://iems-main.test/api/requests/create", requestOptions)
     .then((response) => {
       if (response.ok) {
@@ -42,3 +52,16 @@ document
     const formData = new FormData(this);
     makeRequest(formData);
   });
+function calculateFormDataSize(formData) {
+  let totalSize = 0;
+  for (const pair of formData.entries()) {
+    const value = pair[1];
+    if (typeof value === "string") {
+      totalSize += value.length; // Add the length of the string value
+    } else if (value instanceof Blob) {
+      totalSize += value.size; // Add the size of the Blob (e.g., file)
+    }
+    // Add additional handling for other types of form data if needed
+  }
+  return totalSize;
+}

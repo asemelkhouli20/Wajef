@@ -1,4 +1,5 @@
 import { featuresItem } from "./features.js";
+import { initLazyLoadingFunc } from "./initLazyLoading.js";
 
 function setInsuranceTypeServices() {
   var value = document.getElementById("insurance-type-services");
@@ -15,7 +16,7 @@ function setInsuranceTypeServices() {
     htmlConent += `
 
 <div class="col-md-4 d-flex align-items-stretch ${extra}" data-aos="fade-up">
-  <div class="card" style="background-image: url(Img/insurance/${item.image});">
+  <div class="card lazy-background" data-bg="Img/insurance/${item.image}" >
     <div class="card-body">
       <h5 class="card-title">
         <a>${item.title}</a>
@@ -32,6 +33,7 @@ function setInsuranceTypeServices() {
     `;
   }
   value.innerHTML = htmlConent;
+   initLazyLoadingFunc();
 }
 setInsuranceTypeServices();
 
@@ -43,5 +45,6 @@ function setInsurances() {
     htmlCodeInsurance += `<option value="${item.title}">${item.title}</option>`;
   }
   insurance.innerHTML = htmlCodeInsurance;
+ 
 }
 setInsurances();

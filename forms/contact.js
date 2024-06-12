@@ -10,7 +10,7 @@ function makeRequest(formData) {
   };
   console.log(requestOptions);
 
-  fetch("http://localhost:8000/api/requests/create", requestOptions)
+  fetch("https://iems-main.test/api/requests/create", requestOptions)
     .then((response) => {
       if (response.ok) {
         // If the response is successful, display success message
